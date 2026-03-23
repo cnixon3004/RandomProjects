@@ -33,6 +33,6 @@ Two security groups were created to simulate different access controls:
 This setup allows controlled communication between instances while still enabling external access.
 
 <p align="center">
-  <img src="URL_OF_IMAGE_1" width="300" />
-  <img src="URL_OF_IMAGE_2" width="300" />
+  <img src="/SG_NACL_Challenge/Images/SGA.png" width="40%" />
+  <img src="/SG_NACL_Challenge/Images/SGB.png" width="40%" />
 </p>
