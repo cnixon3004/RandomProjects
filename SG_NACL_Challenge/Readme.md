@@ -16,3 +16,23 @@ This environment consists of:
   + Instance A → Security Group A (SGA)
   + Instance B → Security Group B (SGB)
 + Network ACL applied at the subnet level
+
+🔐 Step 2: Security Group Configuration
+
+Two security groups were created to simulate different access controls:
+
++ Security Group A (SGA)
+  + Allows HTTP (80) from anywhere
+  + Allows SSH (22) from anywhere
+  + Allows all outbound traffic
++ Security Group B (SGB)
+  + Allows HTTP (80) and SSH (22) from anywhere
+  + Allows ICMP (ping) only from SGA
+  + Allows all outbound traffic
+
+This setup allows controlled communication between instances while still enabling external access.
+
+<p align="center">
+  <img src="URL_OF_IMAGE_1" width="300" />
+  <img src="URL_OF_IMAGE_2" width="300" />
+</p>
