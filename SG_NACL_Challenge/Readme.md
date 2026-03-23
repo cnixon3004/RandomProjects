@@ -36,3 +36,35 @@ This setup allows controlled communication between instances while still enablin
   <img src="/SG_NACL_Challenge/Images/SGA.png" width="40%" />
   <img src="/SG_NACL_Challenge/Images/SGB.png" width="40%" />
 </p>
+
+*Security Group for both subnets.*
+
+💻 Step 3: EC2 Deployment & Web Server Setup
+
+Two EC2 instances were launched (one per security group), and Apache was installed using user data:
+
+Verified both instances were running
+
+
+Confirmed Apache web server was accessible via public IP
+Tested SSH access using EC2 Instance Connect
+![Running EC2 Instances](/SG_NACL_Challenge/Images/instances.png)
+*Running EC-2 Instance*
+
+![Apache Test Page](/SG_NACL_Challenge/Images/browser.png)
+*Apache Test page for both instances*
+
+🧪 Step 4: Connectivity Testing
+
+To validate the network configuration, I performed several tests:
+
++ 🌐 HTTP Access
+ + Accessed both instances via browser using public IP
++ 🔐 SSH Access
+ + Connected to both instances using EC2 Instance Connect
++ 🔁 ICMP (Ping)
+  + Successfully pinged Instance B from Instance A
++ 📡 Curl Test
+ + Retrieved Apache page from one instance to another using curl
+
+
